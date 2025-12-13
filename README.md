@@ -17,11 +17,22 @@
     </a>
 </p>
 
-<h1 align="center"><em><b>rustplusplus</b> ~ Rust+ Discord Bot</em></h1>
-</p>
+# Jeff Rust Tracker
+>
+> A unified Node.js/Python solution for tracking Rust+ events, rebranded and enhanced from the original [RustPlusPlus](https://github.com/alexemanuelol/rustplusplus).
 
-A NodeJS Discord Bot that uses the [rustplus.js](https://github.com/liamcottle/rustplus.js) library to utilize the power of the [Rust+ Companion App](https://rust.facepunch.com/companion) with additional Quality-of-Life features.
+**Jeff Rust Tracker** is a fork of **RustPlusPlus** bot, modified to integrate with the "Jeff Bot". It adds MySQL database support, custom tracking logic, and an IPC API for cross-bot communication.
 
+## Key Differences from RustPlusPlus
+
+- **Database Driven**: Uses MySQL for configuration and data storage instead of JSON files.
+- **Tracker Integration**: Includes a custom `TrackerManager` to sync player stats with BattleMetrics and a database.
+- **IPC API**: Exposes an HTTP API for the main Jeff Bot to trigger wipes and broadcasts.
+- **Rebranded**: Custom branding and commands tailored for Jeff's and HardstylerJosh community.
+
+## Original Description
+
+A NodeJS Discord Bot that uses the rustplus.js library to utilize the power of the Rust+ Companion App with additional Quality-of-Life features.com/companion) with additional Quality-of-Life features.
 
 ## **How-to Setup Video**
 
@@ -29,16 +40,15 @@ A NodeJS Discord Bot that uses the [rustplus.js](https://github.com/liamcottle/r
 
 ## **Features**
 
-* Receive notifications for [In-Game Events](docs/discord_text_channels.md#events-channel) (Patrol Helicopter, Cargo Ship, Chinook 47, Oil Rigs triggered).
-* Control [Smart Switches](docs/smart_devices.md#smart-switches) or Groups of Smart Switches via Discord or In-Game Team Chat.
-* Setup [Smart Alarms](docs/smart_devices.md#smart-alarms) to notify in Discord or In-Game Team Chat whenever they are triggered.
-* Use [Storage Monitors](docs/smart_devices.md#storage-monitors) to keep track of Tool Cupboard Upkeep or Large Wooden Box/Vending Machine content.
-* Head over to the [Information Text Channel](docs/images/information_channel.png) to see all sorts of information about the server, ongoing events and team member status.
-* Communicate with teammates from [Discord to In-Game](docs/discord_text_channels.md#teamchat-channel) and vice versa.
-* Keep track of other teams on the server with the [Battlemetrics Player Tracker](docs/discord_text_channels.md#trackers-channel).
-* Alot of [QoL Commands](docs/commands.md) that can be used In-Game or from Discord.
-* View the [Full list of features](docs/full_list_features.md).
-
+- Receive notifications for [In-Game Events](docs/discord_text_channels.md#events-channel) (Patrol Helicopter, Cargo Ship, Chinook 47, Oil Rigs triggered).
+- Control [Smart Switches](docs/smart_devices.md#smart-switches) or Groups of Smart Switches via Discord or In-Game Team Chat.
+- Setup [Smart Alarms](docs/smart_devices.md#smart-alarms) to notify in Discord or In-Game Team Chat whenever they are triggered.
+- Use [Storage Monitors](docs/smart_devices.md#storage-monitors) to keep track of Tool Cupboard Upkeep or Large Wooden Box/Vending Machine content.
+- Head over to the [Information Text Channel](docs/images/information_channel.png) to see all sorts of information about the server, ongoing events and team member status.
+- Communicate with teammates from [Discord to In-Game](docs/discord_text_channels.md#teamchat-channel) and vice versa.
+- Keep track of other teams on the server with the [Battlemetrics Player Tracker](docs/discord_text_channels.md#trackers-channel).
+- Alot of [QoL Commands](docs/commands.md) that can be used In-Game or from Discord.
+- View the [Full list of features](docs/full_list_features.md).
 
 ## **Documentation**
 
@@ -48,32 +58,29 @@ A NodeJS Discord Bot that uses the [rustplus.js](https://github.com/liamcottle/r
 
 > You can get your credentials by running the `rustplusplus credential application`. Download it [here](https://github.com/alexemanuelol/rustplusplus-credential-application/releases/download/v1.4.0/rustplusplus-1.4.0-win-x64.exe)
 
-
 ## **How to run the bot**
 
 > To run the bot, simply open the terminal of your choice and run the following from repository root:
 
-    $ npm start run
-
+    npm start run
 
 ## **How to update the repository**
 
 > Depending on your OS / choice of terminal you can run:
 
-    $ update.bat
+    update.bat
 
 or
 
-    $ ./update.sh
-
+    ./update.sh
 
 ## **Running via docker**
 
-    $ docker run --rm -it -v ${pwd}/credentials:/app/credentials -v ${pwd}/instances:/app/instances -v ${pwd}/logs:/app/logs -e RPP_DISCORD_CLIENT_ID=111....1111 -e RPP_DISCORD_TOKEN=token --name rpp ghcr.io/alexemanuelol/rustplusplus
+    docker run --rm -it -v ${pwd}/credentials:/app/credentials -v ${pwd}/instances:/app/instances -v ${pwd}/logs:/app/logs -e RPP_DISCORD_CLIENT_ID=111....1111 -e RPP_DISCORD_TOKEN=token --name rpp ghcr.io/alexemanuelol/rustplusplus
 
 or
 
-    $ docker-compose up -d
+    docker-compose up -d
 
 Make sure you use the correct values for DISCORD_CLIENT_ID as well as DISCORD_TOKEN in the docker command/docker-compose.yml
 

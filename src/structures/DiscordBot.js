@@ -34,6 +34,9 @@ const Logger = require('./Logger.js');
 const PermissionHandler = require('../handlers/permissionHandler.js');
 const RustLabs = require('../structures/RustLabs');
 const RustPlus = require('../structures/RustPlus');
+const { Database } = require('../util/Database');
+const { TrackerManager } = require('../tracker/TrackerManager');
+const { IpcServer } = require('../api/IpcServer');
 
 class DiscordBot extends Discord.Client {
     constructor(props) {
@@ -76,6 +79,11 @@ class DiscordBot extends Discord.Client {
         this.loadDiscordEvents();
         this.loadEnIntl();
         this.loadBotIntl();
+
+        // Jeff Rust Tracker Integration
+        this.database = Database.getInstance();
+        this.trackerManager = new TrackerManager(this);
+        this.ipcServer = new IpcServer(this);
     }
 
     loadDiscordCommands() {
@@ -169,6 +177,11 @@ class DiscordBot extends Discord.Client {
     }
 
     build() {
+        // Start Jeff Components
+        this.database.init();
+        this.trackerManager.start();
+        this.ipcServer.start();
+
         this.login(Config.discord.token).catch(error => {
             switch (error.code) {
                 case 502: {
@@ -330,6 +343,37 @@ class DiscordBot extends Discord.Client {
                     instance.serverList[instance.activeServer].playerToken);
             }
         });
+    }
+
+    async createRustplusInstancesFromDatabase() {
+        try {
+            const [rows] = await this.database.query("SELECT * FROM rust_server_configs WHERE server_ip IS NOT NULL");
+
+            for (const row of rows) {
+                const { guild_id, server_ip, server_port, player_id, player_token } = row;
+                // Check if instance already exists (priority to DB or JSON? Let's say DB allows override or addition)
+                if (this.rustplusInstances[guild_id]) {
+                    this.log(this.intlGet(null, 'infoCap'), `Rust+ Instance for guild ${guild_id} already loaded. Skipping DB load.`);
+                    continue;
+                }
+
+                // We might need to ensure the "Instance" (DiscordBot structure) exists for this guild too.
+                // But getInstance depends on file? 
+                // The bot loads all guilds it is in. `this.instances` should be populated in `ready` event logic?
+                // Let's assume standard bot flow handles `this.instances` for guilds it is in.
+
+                this.createRustplusInstance(
+                    String(guild_id),
+                    server_ip,
+                    server_port,
+                    String(player_id), // SteamID often stored as BIGINT in DB but JS treats as string/number. RustPlus expects string/number?
+                    Number(player_token)
+                );
+                this.log(this.intlGet(null, 'infoCap'), `Loaded Rust+ Instance for guild ${guild_id} from Database.`);
+            }
+        } catch (error) {
+            this.log(this.intlGet(null, 'errorCap'), `Failed to load Rust+ instances from DB: ${error}`, 'error');
+        }
     }
 
     resetRustplusVariables(guildId) {
