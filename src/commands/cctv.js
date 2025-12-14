@@ -24,7 +24,7 @@ const Builder = require('@discordjs/builders');
 const DiscordMessages = require('../discordTools/discordMessages.js');
 
 module.exports = {
-    name: 'cctv',
+    name: 'rust_cctv',
 
     getData(client, guildId) {
         return new Builder.SlashCommandBuilder()

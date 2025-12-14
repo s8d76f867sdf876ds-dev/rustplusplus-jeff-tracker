@@ -26,7 +26,7 @@ const Constants = require('../util/constants.js');
 const DiscordEmbeds = require('../discordTools/discordEmbeds.js');
 
 module.exports = {
-	name: 'map',
+	name: 'rust_map',
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()

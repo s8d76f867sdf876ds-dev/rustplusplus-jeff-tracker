@@ -27,7 +27,7 @@ const PermissionHandler = require('../handlers/permissionHandler.js');
 const Scrape = require('../util/scrape.js');
 
 module.exports = {
-	name: 'blacklist',
+	name: 'rust_blacklist',
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()

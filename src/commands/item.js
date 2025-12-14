@@ -24,7 +24,7 @@ const DiscordEmbeds = require('../discordTools/discordEmbeds.js');
 const DiscordMessages = require('../discordTools/discordMessages.js');
 
 module.exports = {
-	name: 'item',
+	name: 'rust_item',
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()

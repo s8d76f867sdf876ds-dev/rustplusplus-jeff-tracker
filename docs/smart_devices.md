@@ -3,10 +3,10 @@
 > Smart Devices is an umbrella term for three different devices, `Smart Switches`, `Smart Alarms` and `Storage Monitors`. To pair a Smart Device with rustplusplus, make sure you've [setup the Credentials](credentials.md). When the Credentials are setup, you just need a `wire tool` and start pairing like you would with the [Rust+ Companion App](https://rust.facepunch.com/companion). Once you've paired your Smart Devices, they should appear in their respective Discord Text-Channel (`switches`, `alarms` or `storagemonitors`).
 <br>
 
-It is possible to change the display image for all the different Smart Devices by running the corresponding Slash Command. The Slash Commands to change Smart Device images is `/switch`, `/alarm` and `/storagemonitor`.
-
+It is possible to change the display image for all the different Smart Devices by running the corresponding Slash Command. The Slash Commands to change Smart Device images is `/rust_switch`, `/rust_alarm` and `/rust_storage`.
 
 ## Smart Switches
+>
 > Paired Smart Switches can be located in the `switches` Text-Channel on Discord. Only Smart Switches from the currently/last connected Rust server will be shown in the channel.
 
 ![Image of a Smart Switch](images/smart_devices/smart_switch.png)
@@ -16,6 +16,7 @@ The image above is what a paired Smart Switch looks like in Discord. In this cas
 The Smart Switch can be turned ON/OFF by clicking the `TURN ON` / `TURN OFF` button at the bottom. By clicking on the `EDIT` button, you can edit things such as the `Name` and the `Custom Command` for the Smart Switch. If the `AUTO SETTING` is set to either `AUTO-ON-PROXIMITY` or `AUTO-OFF-PROXIMITY`, there will be a proximity setting available to edit. The proximity setting is used to turn the switch ON/OFF when a teammate is within the proximity of the Smart Switch. To remove the Smart Switch, just click the trashcan button.
 <br><br>
 There are a few auto settings for Smart Switches:
+
 - **OFF** - Smart Switch work as normal.
 - **AUTO-DAY** - Smart Switch will be active only during the day.
 - **AUTO-NIGHT** - Smart Switch will be active only during the night.
@@ -29,15 +30,16 @@ There are a few auto settings for Smart Switches:
 <br>
 
 Smart Switches can also be controlled from within the game through teamchat via custom commands. Custom command call combinations for the Smart Switch `Switch` are shown below:
-* **!sw** - To toggle the switch.
-* **!sw 60s** - To toggle the switch and then toggle it back after 60 seconds.
-* **!sw on** - To turn the switch ON.
-* **!sw off** - To turn the switch OFF.
-* **!sw on 60s** - To turn the switch ON and automatically turn it OFF after 60 seconds.
-* **!sw off 60s** - To turn the switch OFF and automatically turn it ON after 60 seconds.
-* **!sw status** - To get the current status of the switch.
+- **!sw** - To toggle the switch.
+- **!sw 60s** - To toggle the switch and then toggle it back after 60 seconds.
+- **!sw on** - To turn the switch ON.
+- **!sw off** - To turn the switch OFF.
+- **!sw on 60s** - To turn the switch ON and automatically turn it OFF after 60 seconds.
+- **!sw off 60s** - To turn the switch OFF and automatically turn it ON after 60 seconds.
+- **!sw status** - To get the current status of the switch.
 
 ### Smart Switch Groups
+>
 > Smart Switch Groups is a feature that allows you to control multiple Smart Switches at once. The image below is what a Smart Switch Group looks like in Discord.
 
 ![Image of a Smart Switch Group](images/smart_devices/smart_switch_group.png)
@@ -49,14 +51,14 @@ The Smart Switch Group can be turned ON/OFF by clicking the `TURN ON` / `TURN OF
 <br>
 
 Smart Switch Groups can also be controlled from within the game through teamchat via custom commands. Custom command call combinations for the Smart Switch Group `Turrets` are shown below:
-* **!t on** - To turn all the switches in the group ON.
-* **!t off** - To turn all the switches in the group OFF.
-* **!t on 60s** - To turn all the switches in the group ON and automatically turn them OFF after 60 seconds.
-* **!t off 60s** - To turn all the switches in the group OFF and automatically turn them ON after 60 seconds.
-* **!t status** - To get status of all Smart Switches in the group.
-
+- **!t on** - To turn all the switches in the group ON.
+- **!t off** - To turn all the switches in the group OFF.
+- **!t on 60s** - To turn all the switches in the group ON and automatically turn them OFF after 60 seconds.
+- **!t off 60s** - To turn all the switches in the group OFF and automatically turn them ON after 60 seconds.
+- **!t status** - To get status of all Smart Switches in the group.
 
 ## Smart Alarms
+>
 > Paired Smart Alarms can be located in the `alarms` Text-Channel on Discord. All Smart Alarms from all servers will be shown in the channel.
 
 ![Image of a Smart Alarm](images/smart_devices/smart_alarm.png)
@@ -67,8 +69,8 @@ By clicking the `@everyone` button you decide if the @everyone tag should be use
 <br><br>
 There are a few more settings for Smart Alarms that can be found in the `settings` channel. The first one lets you decide if Smart Alarms that are not part of the currently connected server still should notify when triggered. The second one lets you decide if Smart Alarms should notify In-Game when triggered.
 
-
 ## Storage Monitors
+>
 > Paired Storage Monitors can be located in the `storagemonitors` Text-Channel on Discord. Only Storage Monitors from the currently/last connected Rust server will be shown in the channel.
 
 ![Image of a Storage Monitor](images/smart_devices/storage_monitor_tool_cupboard.png)
@@ -82,8 +84,8 @@ Container type Storage Monitor have the `RECYCLE` button which lets you calculat
 <br><br>
 By clicking on the `EDIT` button, you can edit the `Name` of the Storage Monitor. To remove the Storage Monitor, just click the trashcan button.
 
-
 ## Unreachable Smart Devices
+>
 > When a Smart Devices gets removed, the hoster loses building privilege to the Smart Device or rustplusplus just don't get a response from pinging it, the device is unreachable. In the image below you can see the Smart Switch `Switch` can no longer be reached. In this case its because of a force wipe, The Smart Switch does no longer exist. If the Smart Device is unreachable because the hoster lost building privilege, gaining building privilege again will make the device reachable again. But if the Smart Device was removed from where it was placed you might as well remove it from Discord, once a Smart Device gets removed the Entity Id is invalid. Even if you place the same Smart Device, the Entity Id will be different.
 
 ![Image of an unreachable Smart Device](images/smart_devices/unreachable_device.png)

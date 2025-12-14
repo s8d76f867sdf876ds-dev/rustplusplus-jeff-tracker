@@ -24,7 +24,7 @@ const DiscordEmbeds = require('../discordTools/discordEmbeds.js');
 const DiscordMessages = require('../discordTools/discordMessages.js');
 
 module.exports = {
-	name: 'recycle',
+	name: 'rust_recycle',
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()

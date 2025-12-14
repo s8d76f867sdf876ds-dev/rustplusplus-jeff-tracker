@@ -24,7 +24,7 @@ const Constants = require('../util/constants.js');
 const DiscordEmbeds = require('../discordTools/discordEmbeds.js');
 
 module.exports = {
-	name: 'alias',
+	name: 'rust_alias',
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()

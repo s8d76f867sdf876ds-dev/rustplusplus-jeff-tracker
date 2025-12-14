@@ -28,7 +28,7 @@ const DiscordTools = require('../discordTools/discordTools.js');
 const InstanceUtils = require('../util/instanceUtils.js');
 
 module.exports = {
-    name: 'credentials',
+    name: 'rust_credentials',
 
     getData(client, guildId) {
         return new Builder.SlashCommandBuilder()

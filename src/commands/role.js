@@ -25,7 +25,7 @@ const DiscordTools = require('../discordTools/discordTools');
 const PermissionHandler = require('../handlers/permissionHandler.js');
 
 module.exports = {
-	name: 'role',
+	name: 'rust_role',
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()

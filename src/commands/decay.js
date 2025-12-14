@@ -24,7 +24,7 @@ const DiscordEmbeds = require('../discordTools/discordEmbeds.js');
 const Timer = require('../util/timer.js');
 
 module.exports = {
-	name: 'decay',
+	name: 'rust_decay',
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()

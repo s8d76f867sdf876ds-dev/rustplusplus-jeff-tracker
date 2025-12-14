@@ -23,7 +23,7 @@ const Builder = require('@discordjs/builders');
 const DiscordMessages = require('../discordTools/discordMessages.js');
 
 module.exports = {
-	name: 'help',
+	name: 'rust_help',
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()

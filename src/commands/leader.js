@@ -23,7 +23,7 @@ const Builder = require('@discordjs/builders');
 const DiscordEmbeds = require('../discordTools/discordEmbeds');
 
 module.exports = {
-	name: 'leader',
+	name: 'rust_leader',
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()

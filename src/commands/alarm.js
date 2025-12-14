@@ -25,7 +25,7 @@ const DiscordMessages = require('../discordTools/discordMessages.js');
 const InstanceUtils = require('../util/instanceUtils.js');
 
 module.exports = {
-	name: 'alarm',
+	name: 'rust_alarm',
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()

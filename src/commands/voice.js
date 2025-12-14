@@ -25,7 +25,7 @@ const { joinVoiceChannel, getVoiceConnection } = require('@discordjs/voice');
 const DiscordMessages = require('../discordTools/discordMessages.js');
 
 module.exports = {
-    name: 'voice',
+    name: 'rust_voice',
 
     getData(client, guildId) {
         return new Builder.SlashCommandBuilder()

@@ -26,7 +26,7 @@ const InstanceUtils = require('../util/instanceUtils.js');
 const SmartSwitchGroupHandler = require('../handlers/smartSwitchGroupHandler.js');
 
 module.exports = {
-    name: 'switch',
+    name: 'rust_switch',
 
     getData(client, guildId) {
         return new Builder.SlashCommandBuilder()

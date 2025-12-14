@@ -9,31 +9,30 @@
 
 Slash Command | Description
 ------------- | -----------
-[**/alarm**](commands.md#alarm) | Operations on Smart Alarms.
-[**/alias**](commands.md#alias) | Create an alias for a command/sequence of characters.
-[**/blacklist**](commands.md#blacklist) | Blacklist a user from using the bot.
-[**/cctv**](commands.md#cctv) | Posts CCTV codes for a monument.
-[**/craft**](commands.md#craft) | Display the cost to craft an item.
-[**/credentials**](commands.md#credentials) | Set/Clear the Credentials for the user account.
-[**/decay**](commands.md#decay) | Display the decay time of an item.
-[**/help**](commands.md#help) | Display help message.
-[**/item**](commands.md#item) | Get the details of an item.
-[**/leader**](commands.md#leader) | Give or take the leadership from/to a team member.
-[**/map**](commands.md#map) | Get the currently connected server map image.
-[**/market**](commands.md#market) | Operations for In-Game Vending Machines.
-[**/players**](commands.md#players) | Get player/players information based on battlemetrics.
-[**/recycle**](commands.md#recycle) | Display the output of recycling an item.
-[**/research**](commands.md#research) | Display the cost to research an item.
-[**/reset**](commands.md#reset) | Reset Discord channels.
-[**/role**](commands.md#role) | Set/Clear a specific role that will be able to see the rustplusplus category content.
-[**/storagemonitor**](commands.md#storagemonitors) | Operations on Storage Monitors.
-[**/switch**](commands.md#switch) | Operations on Smart Switches.
-[**/upkeep**](commands.md#upkeep) | Get the upkeep cost of an item.
-[**/uptime**](commands.md#uptime) | Display uptime of the bot and server.
-[**/voice**](commands.md#voice) | Operations on Voice Feature.
+[**/rust_alarm**](commands.md#rust_alarm) | Operations on Smart Alarms.
+[**/rust_alias**](commands.md#rust_alias) | Create an alias for a command/sequence of characters.
+[**/rust_blacklist**](commands.md#rust_blacklist) | Blacklist a user from using the bot.
+[**/rust_cctv**](commands.md#rust_cctv) | Posts CCTV codes for a monument.
+[**/rust_craft**](commands.md#rust_craft) | Display the cost to craft an item.
+[**/rust_credentials**](commands.md#rust_credentials) | Set/Clear the Credentials for the user account.
+[**/rust_decay**](commands.md#rust_decay) | Display the decay time of an item.
+[**/rust_help**](commands.md#rust_help) | Display help message.
+[**/rust_item**](commands.md#rust_item) | Get the details of an item.
+[**/rust_leader**](commands.md#rust_leader) | Give or take the leadership from/to a team member.
+[**/rust_map**](commands.md#rust_map) | Get the currently connected server map image.
+[**/rust_market**](commands.md#rust_market) | Operations for In-Game Vending Machines.
+[**/rust_players**](commands.md#rust_players) | Get player/players information based on battlemetrics.
+[**/rust_recycle**](commands.md#rust_recycle) | Display the output of recycling an item.
+[**/rust_research**](commands.md#rust_research) | Display the cost to research an item.
+[**/rust_reset**](commands.md#rust_reset) | Reset Discord channels.
+[**/rust_role**](commands.md#rust_role) | Set/Clear a specific role that will be able to see the rustplusplus category content.
+[**/rust_storage**](commands.md#rust_storage) | Operations on Storage Monitors.
+[**/rust_switch**](commands.md#rust_switch) | Operations on Smart Switches.
+[**/rust_upkeep**](commands.md#rust_upkeep) | Get the upkeep cost of an item.
+[**/rust_uptime**](commands.md#rust_uptime) | Display uptime of the bot and server.
+[**/rust_voice**](commands.md#rust_voice) | Operations on Voice Feature.
 
-
-## **/alarm**
+## **/rust_alarm**
 
 > **Operations on Smart Alarms.**
 
@@ -45,8 +44,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command alarm Image](images/slash_commands/alarms_edit.png)
 
-
-## **/alias**
+## **/rust_alias**
 
 > **Create an alias for a command/sequence of characters.**
 
@@ -61,8 +59,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command alias Image](images/slash_commands/alias.png)
 
-
-## **/blacklist**
+## **/rust_blacklist**
 
 > **Blacklist a user from using the bot.**
 
@@ -78,8 +75,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command blacklist Image](images/slash_commands/blacklist.png)
 
-
-## **/cctv**
+## **/rust_cctv**
 
 > **Posts CCTV codes for a monument.**
 
@@ -89,8 +85,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command monument Image](images/slash_commands/cctv.png)
 
-
-## **/craft**
+## **/rust_craft**
 
 > **Display the cost to craft an item.**
 
@@ -102,8 +97,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command craft Image](images/slash_commands/craft.png)
 
-
-## **/credentials**
+## **/rust_credentials**
 
 > **Add/Remove the Credentials for the user account.**
 
@@ -124,8 +118,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command credentials Image](images/slash_commands/credentials.png)
 
-
-## **/decay**
+## **/rust_decay**
 
 > **Display the decay time of an item.**
 
@@ -137,15 +130,13 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command decay Image](images/slash_commands/decay.png)
 
-
-## **/help**
+## **/rust_help**
 
 > Display help message.
 
 ![Discord Slash Command help Image](images/slash_commands/help.png)
 
-
-## **/item**
+## **/rust_item**
 
 > **Get the details of an item.**
 
@@ -156,8 +147,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command item Image](images/slash_commands/item.png)
 
-
-## **/leader**
+## **/rust_leader**
 
 > **Give or take the leadership from/to a team member.**
 
@@ -167,8 +157,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command leader Image](images/slash_commands/leader.png)
 
-
-## **/map**
+## **/rust_map**
 
 > **Get the currently connected server map image.**
 
@@ -181,8 +170,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command map Image](images/slash_commands/map.png)
 
-
-## **/market**
+## **/rust_market**
 
 > **Operations for In-Game Vending Machines.**.
 
@@ -204,8 +192,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command market Image](images/slash_commands/market.png)
 
-
-## **/players**
+## **/rust_players**
 
 > **Get player/players information based on Battlemetrics.** Calling the subcommand name without the name option will display all players depending on status option. By calling the subcommand playerid, you will get more specific information about a single player.
 
@@ -223,8 +210,7 @@ Subcommand | Options | Description | Required
 ![Discord Slash Command players all players Image](images/slash_commands/players_all_players.png)
 ![Discord Slash Command players specific user Image](images/slash_commands/players_specific_user.png)
 
-
-## **/recycle**
+## **/rust_recycle**
 
 > **Display the output of recycling an item.**
 
@@ -236,8 +222,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command recycle Image](images/slash_commands/recycle.png)
 
-
-## **/research**
+## **/rust_research**
 
 > **Display the cost to research an item.**
 
@@ -248,8 +233,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command research Image](images/slash_commands/research.png)
 
-
-## **/reset**
+## **/rust_reset**
 
 > **Reset Discord channels.**
 
@@ -266,8 +250,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command reset Image](images/slash_commands/reset.png)
 
-
-## **/role**
+## **/rust_role**
 
 > **Set/Clear a specific role that will be able to see the rustplusplus category content.**
 
@@ -279,8 +262,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command role Image](images/slash_commands/role.png)
 
-
-## **/storagemonitors**
+## **/rust_storage**
 
 > **Operations on Storage Monitors.**
 
@@ -292,8 +274,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command storagemonitor Image](images/slash_commands/storagemonitor.png)
 
-
-## **/switch**
+## **/rust_switch**
 
 > **Operations on Smart Switches.**
 
@@ -305,8 +286,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command switch Image](images/slash_commands/switch.png)
 
-
-## **/upkeep**
+## **/rust_upkeep**
 
 > **Get the upkeep cost of an item.**
 
@@ -317,8 +297,7 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command upkeep Image](images/slash_commands/upkeep.png)
 
-
-## **/uptime**
+## **/rust_uptime**
 
 > **Display uptime of the bot and server.**
 
@@ -329,17 +308,16 @@ Subcommand | Options | Description | Required
 
 ![Discord Slash Command uptime Image](images/slash_commands/uptime.png)
 
-## **/voice**
+## **/rust_voice**
 
 > **Operations on Voice Feature.**
 
 Subcommand | Options | Description | Required
 ---------- | ------- | ----------- | --------
 `join` | &nbsp; | Bot Joins a Voicechannel. | &nbsp;
-`leave` | &nbsp; | Bot Leaves a Voicechannel. | &nbsp;
+`leave` | &nbsp; | Bot Leaves a Voicechannel. | `False`
 
 ![Discord Slash Command uptime Image](images/slash_commands/voice.png)
-
 
 # In-Game Commands
 
@@ -383,15 +361,12 @@ In-Game Command | Description
 [**vendor**](commands.md#vendor) | Get information about the Traveling Vendor (Current Location, Time since last vendor)
 [**wipe**](commands.md#wipe) | Get the time since it was wiped.
 
-
-
 ## **afk**
 
 > **Get the currently afk players in your team.** Definition of AFK for this command is inactivity (No change in XY-coordinate) for more than 5 minutes.
 <br>Command: `!afk`
 
 ![In-Game Command afk Image](images/ingame_commands/afk_ingame.png)
-
 
 ## **alive**
 
@@ -401,14 +376,12 @@ In-Game Command | Description
 
 ![In-Game Command alive Image](images/ingame_commands/alive_ingame.png)
 
-
 ## **cargo**
 
 > **Get information about CargoShip (Location, time till enters egress stage, time since last on map).**
 <br>Command: `!cargo`
 
 ![In-Game Command cargo Image](images/ingame_commands/cargo_ingame.png)
-
 
 ## **chinook**
 
@@ -417,7 +390,6 @@ In-Game Command | Description
 
 ![In-Game Command chinook Image](images/ingame_commands/chinook_ingame.png)
 
-
 ## **connection/connections**
 
 > **Get recent connection events of the team or from a specific teammate.**
@@ -425,7 +397,6 @@ In-Game Command | Description
 <br>Command: `!connection Alle`
 
 ![In-Game Command connection Image](images/ingame_commands/connection_ingame.png)
-
 
 ## **craft ingame**
 
@@ -436,7 +407,6 @@ In-Game Command | Description
 
 ![In-Game Command craft Image](images/ingame_commands/craft_ingame.png)
 
-
 ## **death/deaths**
 
 > **Get recent death events of the team or from a specific teammate.**
@@ -444,7 +414,6 @@ In-Game Command | Description
 <br>Command: `!death Alle`
 
 ![In-Game Command death Image](images/ingame_commands/death_ingame.png)
-
 
 ## **decay ingame**
 
@@ -456,7 +425,6 @@ In-Game Command | Description
 
 ![In-Game Command decay Image](images/ingame_commands/decay_ingame.png)
 
-
 ## **events**
 
 > **Get recent In-Game events.** Available events are cargo, heli, small, large, chinook
@@ -467,7 +435,6 @@ In-Game Command | Description
 
 ![In-Game Command events Image](images/ingame_commands/events_ingame.png)
 
-
 ## **heli**
 
 > **Get information about Patrol Helicopter (Location, time since last downed, time since last on map).**
@@ -475,14 +442,12 @@ In-Game Command | Description
 
 ![In-Game Command heli Image](images/ingame_commands/heli_ingame.png)
 
-
 ## **large**
 
 > **Get information about Large Oil Rig (Time till crate unlocks, time since last trigger).**
 <br>Command: `!large`
 
 ![In-Game Command large Image](images/ingame_commands/large_ingame.png)
-
 
 ## **leader**
 
@@ -495,7 +460,6 @@ Subcommand | Description | Required
 
 ![In-Game Command leader Image](images/ingame_commands/leader_ingame.png)
 
-
 ## **marker**
 
 > **Set custom markers anywhere on the map.** This command can be very useful for small stash locations. Place down a small stash, create a marker on that spot and be able to navigate back to that exact place at a later stage. To list all registered markers, run `!markers`.
@@ -507,7 +471,6 @@ Subcommand | Description | Required
 `<marker_name>` | Calling with the name of the marker will let you navigate to that marker (`!marker <name>`). | `False`
 
 ![In-Game Command marker Image](images/ingame_commands/marker_ingame.png)
-
 
 ## **market ingame**
 
@@ -527,14 +490,12 @@ Subcommand | Description | Required
 
 ![In-Game Command market Image](images/ingame_commands/market_ingame.png)
 
-
 ## **mute**
 
 > **Mute the bot from the In-Game Team Chat.** This will mute everything the bot would normally say in Team Chat such as command response, event notifications, timers, Smart Device notifications.
 <br>Command: `!mute`
 
 ![In-Game Command mute Image](images/ingame_commands/mute_ingame.png)
-
 
 ## **note/notes**
 
@@ -547,14 +508,12 @@ Subcommand | Description | Required
 
 ![In-Game Command notes Image](images/ingame_commands/notes_ingame.png)
 
-
 ## **offline**
 
 > **Get the currently offline players in your team.**
 <br>Command: `!offline`
 
 ![In-Game Command offline Image](images/ingame_commands/offline_ingame.png)
-
 
 ## **online**
 
@@ -563,14 +522,12 @@ Subcommand | Description | Required
 
 ![In-Game Command online Image](images/ingame_commands/online_ingame.png)
 
-
 ## **player/players**
 
 > **Get the names and playtime of the currently online players on the server (Based on Battlemetrics).** To get all the currently online players on the server run `!players`. To get the information from a certain player run `!player <name or part of name>`.
 
 ![In-Game Command players Image](images/ingame_commands/players_ingame.png)
 ![In-Game Command player Image](images/ingame_commands/player_ingame.png)
-
 
 ## **pop**
 
@@ -579,13 +536,11 @@ Subcommand | Description | Required
 
 ![In-Game Command pop Image](images/ingame_commands/pop_ingame.png)
 
-
 ## **prox**
 
 > **Get the distance to the three closest teammates.** To get the three closest teammates run `!prox`. To get the distance to a team member run `!prox <name or part of name>`.
 
 ![In-Game Command prox Image](images/ingame_commands/prox_ingame.png)
-
 
 ## **recycle ingame**
 
@@ -596,7 +551,6 @@ Subcommand | Description | Required
 
 ![In-Game Command recycle Image](images/ingame_commands/recycle_ingame.png)
 
-
 ## **research ingame**
 
 > **Display the cost to research an item.**
@@ -606,7 +560,6 @@ Subcommand | Description | Required
 
 ![In-Game Command research Image](images/ingame_commands/research_ingame.png)
 
-
 ## **send**
 
 > **Send a message to a discord user.**
@@ -614,14 +567,12 @@ Subcommand | Description | Required
 
 ![In-Game Command send Image](images/ingame_commands/send_ingame.png)
 
-
 ## **small**
 
 > **Get information about Small Oil Rig (Time till crate unlocks, time since last trigger).**
 <br>Command: `!small`
 
 ![In-Game Command small Image](images/ingame_commands/small_ingame.png)
-
 
 ## **steamid**
 
@@ -633,7 +584,6 @@ Subcommand | Description | Required
 
 ![In-Game Command steamid Image](images/ingame_commands/steamid_ingame.png)
 
-
 ## **team**
 
 > **Get the names of all members in the team.**
@@ -641,14 +591,12 @@ Subcommand | Description | Required
 
 ![In-Game Command team Image](images/ingame_commands/team_ingame.png)
 
-
 ## **time**
 
 > **Get the current time In-Game and time till day/night.**
 <br>Command: `!time`
 
 ![In-Game Command time Image](images/ingame_commands/time_ingame.png)
-
 
 ## **timer**
 
@@ -662,7 +610,6 @@ Subcommand | Description | Required
 
 ![In-Game Command timer Image](images/ingame_commands/timer_ingame.png)
 
-
 ## **tr**
 
 > **Translate a text from English to another language.**
@@ -675,7 +622,6 @@ Subcommand | Description | Required
 
 ![In-Game Command get language code Image](images/ingame_commands/language_code_ingame.png)
 ![In-Game Command translateTo Image](images/ingame_commands/translateTo_ingame.png)
-
 
 ## **trf**
 
@@ -691,14 +637,12 @@ Subcommand | Description | Required
 
 ![In-Game Command tts Image](images/ingame_commands/tts_ingame.png)
 
-
 ## **unmute**
 
 > **Unmute the bot from the In-Game Team Chat.**
 <br>Command: `!unmute`
 
 ![In-Game Command unmute Image](images/ingame_commands/unmute_ingame.png)
-
 
 ## **upkeep**
 
@@ -707,7 +651,6 @@ Subcommand | Description | Required
 
 ![In-Game Command upkeep Image](images/ingame_commands/upkeep_ingame.png)
 
-
 ## **uptime ingame**
 
 > **Display the uptime of the bot and server.**
@@ -715,14 +658,12 @@ Subcommand | Description | Required
 
 ![In-Game Command uptime Image](images/ingame_commands/uptime_ingame.png)
 
-
 ## **vendor**
 
 > **Get information about the Traveling Vendor (Current Location, Time since last Traveling Vendor).**
 <br>Command: `!vendor`
 
 ![In-Game Command vendor Image](images/ingame_commands/vendor_ingame.png)
-
 
 ## **wipe**
 

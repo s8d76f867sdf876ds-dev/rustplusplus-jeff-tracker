@@ -25,7 +25,7 @@ const DiscordEmbeds = require('../discordTools/discordEmbeds.js');
 const DiscordTools = require('../discordTools/discordTools.js');
 
 module.exports = {
-	name: 'players',
+	name: 'rust_players',
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()

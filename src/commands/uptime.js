@@ -24,7 +24,7 @@ const DiscordMessages = require('../discordTools/discordMessages.js');
 const Timer = require('../util/timer.js');
 
 module.exports = {
-	name: 'uptime',
+	name: 'rust_uptime',
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()

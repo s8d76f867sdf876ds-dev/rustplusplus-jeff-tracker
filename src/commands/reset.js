@@ -27,7 +27,7 @@ const DiscordTools = require('../discordTools/discordTools.js');
 const PermissionHandler = require('../handlers/permissionHandler.js');
 
 module.exports = {
-	name: 'reset',
+	name: 'rust_reset',
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()
