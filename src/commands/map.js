@@ -30,7 +30,7 @@ module.exports = {
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()
-			.setName('map')
+			.setName('rust_map')
 			.setDescription(client.intlGet(guildId, 'commandsMapDesc'))
 			.addSubcommand(subcommand => subcommand
 				.setName('all')

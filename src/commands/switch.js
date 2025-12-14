@@ -30,7 +30,7 @@ module.exports = {
 
     getData(client, guildId) {
         return new Builder.SlashCommandBuilder()
-            .setName('switch')
+            .setName('rust_switch')
             .setDescription(client.intlGet(guildId, 'commandsSwitchDesc'))
             .addSubcommand(subcommand => subcommand
                 .setName('edit')

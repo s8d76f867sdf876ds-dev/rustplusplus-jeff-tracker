@@ -32,7 +32,7 @@ module.exports = {
 
     getData(client, guildId) {
         return new Builder.SlashCommandBuilder()
-            .setName('credentials')
+            .setName('rust_credentials')
             .setDescription(client.intlGet(guildId, 'commandsCredentialsDesc'))
             .addSubcommand(subcommand => subcommand
                 .setName('add')

@@ -28,7 +28,7 @@ module.exports = {
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()
-			.setName('craft')
+			.setName('rust_craft')
 			.setDescription(client.intlGet(guildId, 'commandsCraftDesc'))
 			.addStringOption(option => option
 				.setName('name')

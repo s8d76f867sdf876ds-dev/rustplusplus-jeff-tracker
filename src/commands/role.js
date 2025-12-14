@@ -29,7 +29,7 @@ module.exports = {
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()
-			.setName('role')
+			.setName('rust_role')
 			.setDescription(client.intlGet(guildId, 'commandsRoleDesc'))
 			.addSubcommand(subcommand => subcommand
 				.setName('set')

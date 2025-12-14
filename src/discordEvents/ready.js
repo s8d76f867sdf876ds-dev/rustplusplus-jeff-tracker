@@ -46,12 +46,14 @@ module.exports = {
             client.log(client.intlGet(null, 'warningCap'), client.intlGet(null, 'ignoreSetUsername'));
         }
 
+        /*
         try {
             await client.user.setAvatar(Path.join(__dirname, '..', 'resources/images/rustplusplus_logo.png'));
         }
         catch (e) {
             client.log(client.intlGet(null, 'warningCap'), client.intlGet(null, 'ignoreSetAvatar'));
         }
+        */
 
         client.user.setPresence({
             activities: [{ name: '/help', type: Discord.ActivityType.Listening }],

@@ -28,7 +28,7 @@ module.exports = {
 
     getData(client, guildId) {
         return new Builder.SlashCommandBuilder()
-            .setName('market')
+            .setName('rust_market')
             .setDescription(client.intlGet(guildId, 'commandsMarketDesc'))
             .addSubcommand(subcommand => subcommand
                 .setName('search')

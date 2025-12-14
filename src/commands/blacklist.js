@@ -31,7 +31,7 @@ module.exports = {
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()
-			.setName('blacklist')
+			.setName('rust_blacklist')
 			.setDescription(client.intlGet(guildId, 'commandsBlacklistDesc'))
 			.addSubcommand(subcommand => subcommand
 				.setName('add')

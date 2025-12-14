@@ -28,7 +28,7 @@ module.exports = {
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()
-			.setName('uptime')
+			.setName('rust_uptime')
 			.setDescription(client.intlGet(guildId, 'commandsUptimeDesc'))
 			.addSubcommand(subcommand => subcommand
 				.setName('bot')

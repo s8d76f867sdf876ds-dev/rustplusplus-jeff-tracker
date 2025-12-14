@@ -28,7 +28,7 @@ module.exports = {
 
     getData(client, guildId) {
         return new Builder.SlashCommandBuilder()
-            .setName('cctv')
+            .setName('rust_cctv')
             .setDescription(client.intlGet(guildId, 'commandsCctvDesc'))
             .addStringOption(option =>
                 option.setName('monument')

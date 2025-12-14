@@ -28,7 +28,7 @@ module.exports = {
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()
-			.setName('recycle')
+			.setName('rust_recycle')
 			.setDescription(client.intlGet(guildId, 'commandsRecycleDesc'))
 			.addStringOption(option => option
 				.setName('name')

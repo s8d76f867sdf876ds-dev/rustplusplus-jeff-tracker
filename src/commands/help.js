@@ -27,7 +27,7 @@ module.exports = {
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()
-			.setName('help')
+			.setName('rust_help')
 			.setDescription(client.intlGet(guildId, 'commandsHelpDesc'));
 	},
 

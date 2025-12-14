@@ -29,7 +29,7 @@ module.exports = {
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()
-			.setName('alarm')
+			.setName('rust_alarm')
 			.setDescription(client.intlGet(guildId, 'commandsAlarmDesc'))
 			.addSubcommand(subcommand => subcommand
 				.setName('edit')

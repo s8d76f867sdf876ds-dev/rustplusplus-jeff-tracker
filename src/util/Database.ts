@@ -2,8 +2,11 @@ import { createPool, Pool, PoolOptions } from 'mysql2/promise';
 import * as dotenv from 'dotenv';
 import path from 'path';
 
-// Load .env from root
+// Load .env from root to ensure process.env is populated for Config
 dotenv.config({ path: path.join(__dirname, '../../.env') });
+
+// Import Config
+const Config = require('../../config');
 
 export class Database {
     private static instance: Database;
@@ -11,11 +14,22 @@ export class Database {
     private isConnected: boolean = false;
 
     private constructor() {
+        // Handle cases where host might include port (e.g. 1.2.3.4:3306)
+        let host = Config.database.host;
+        let port = Config.database.port;
+
+        if (host.includes(':')) {
+            const parts = host.split(':');
+            host = parts[0];
+            port = parseInt(parts[1]);
+        }
+
         const dbConfig: PoolOptions = {
-            host: process.env.DB_HOST || 'localhost',
-            user: process.env.DB_USER || 'root',
-            password: process.env.DB_PASSWORD || '',
-            database: process.env.DB_NAME || 'jeff_bot_db',
+            host: host,
+            port: port,
+            user: Config.database.user,
+            password: Config.database.password,
+            database: Config.database.name,
             waitForConnections: true,
             connectionLimit: 10,
             queueLimit: 0,

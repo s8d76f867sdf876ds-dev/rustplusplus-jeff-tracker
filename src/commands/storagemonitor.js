@@ -29,7 +29,7 @@ module.exports = {
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()
-			.setName('storagemonitor')
+			.setName('rust_storage')
 			.setDescription(client.intlGet(guildId, 'commandsStoragemonitorDesc'))
 			.addSubcommand(subcommand => subcommand
 				.setName('edit')

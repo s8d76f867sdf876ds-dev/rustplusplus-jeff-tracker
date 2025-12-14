@@ -31,7 +31,7 @@ module.exports = {
 
 	getData(client, guildId) {
 		return new Builder.SlashCommandBuilder()
-			.setName('reset')
+			.setName('rust_reset')
 			.setDescription(client.intlGet(guildId, 'commandsResetDesc'))
 			.addSubcommand(subcommand => subcommand
 				.setName('discord')
